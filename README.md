@@ -1,5 +1,5 @@
 # **AME - LAB RECORD**
-# **EXP : 02**
+# **EXP : 01**
 # **V-I CHARACTERISTICS OF GUNN DIODE**
 
 ---
