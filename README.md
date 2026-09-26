@@ -1,94 +1,97 @@
 # **AME - LAB RECORD**
-# **EXP : 01**
-# **V-I CHARACTERISTICS OF GUNN DIODE**
+# **EXP : 02**
+# **MODE CHARACTERISTICS OF REFLEX KLYSTRON**
 
+# exp_2_mode_characteristics_of_reflex_klystron_oscillator
+
+# Experiment 2 — Mode Characteristics of Reflex Klystron
 ---
-
 ## Aim
 
-To study the I–V characteristics of a Gunn diode and the depth of modulation of a PIN diode.
+To study the mode characteristics of a reflex klystron and hence determine the mode number, transit time, electronic tuning range (ETR) and electronic tuning sensitivity (ETS).
 
-## Apparatus Used
+## Equipment and Components
 
-Gunn power supply, Gunn oscillator, PIN modulator, isolator, frequency meter, variable attenuator, detector mount, slotted section, VSWR meter.
+1. Klystron power supply MTI KP 503
+2. Klystron tube / 2K25
+3. Isolator MTI/NVIS-204
+4. Frequency meter MTI/NVIS-205A
+5. Variable attenuator MTI/NVIS-206
+6. Detector mount MTI/NVIS-209
+7. Waveguide stands MTI/NVIS
+8. VSWR meter MTI VS 501/NVIS
+9. Cathode ray oscilloscope Scientech-801C
 
 ## Experimental Setup
 
-<img width="2170" height="725" alt="image" src="https://github.com/user-attachments/assets/9572ed54-7f9f-413c-b568-c08d9049d680" />
+<img width="870" height="295" alt="image" src="https://github.com/user-attachments/assets/9a3dedfa-312f-4f45-ab30-f3a8f4bd1639" />
+
+<img width="701" height="292" alt="image" src="https://github.com/user-attachments/assets/7d3952ea-2bb0-43d7-b35c-2a6ffff002c7" />
 
 ---
 
 ## Theory
 
-The Gunn oscillator is based on the **negative differential conductivity** effect in bulk semiconductors. The Gunn diode has two conduction bands separated by an energy gap larger than thermal agitation energies. When an electron is transferred to the satellite energy band it acquires negative differential mobility, producing the negative resistance required for oscillation.
+The reflex klystron is a microwave tube used as the microwave source in the lab. It uses **velocity modulation** to convert a continuous electron beam into microwave power; its oscillation frequency can be varied over a wide band and it can be pulse- and frequency-modulated.
 
-In a Gunn oscillator the diode is placed in a resonant cavity, so the oscillation frequency is set by the cavity dimensions rather than by the diode itself.
+Electrons emitted from the cathode are accelerated through the positive resonator grid towards the reflector. The reflector is negative with respect to the cathode, so it retards and finally reflects the electrons, which turn back through the resonator grids. When the klystron oscillates a high field exists between the resonator grids: an electron crossing the gap is either accelerated or retarded as the gap voltage changes in amplitude. Accelerated electrons leave at increased velocity, retarded electrons at reduced velocity, so the electrons need different times to return — different transit times — and the returning electrons group together in **bunches**. This variation of electron velocity is velocity modulation.
 
-Although a Gunn oscillator can be amplitude-modulated with the bias voltage, a separate **PIN modulator** is used in this experiment: a square-wave modulating signal is applied through the modulator onto the microwave carrier.
+As the bunches pass back through the resonator grids they interact with the gap voltage. If they arrive when the grid voltage slows them down, energy is delivered to the resonator and the klystron oscillates. The strongest oscillation occurs when the transit time in the reflector region equals **n + ¾** cycles of the resonator frequency, where *n* is an integer including zero. If the bunches arrive when the field accelerates them, energy is removed from the resonator and no oscillation occurs.
 
-<img width="542" height="341" alt="image" src="https://github.com/user-attachments/assets/313e43ed-dd69-4b09-9a4f-7a7616faa805" />
+<img width="551" height="376" alt="image" src="https://github.com/user-attachments/assets/f46fd238-b33e-4b3e-a345-7f672af0752e" />
+
+### Mechanical and Electronic Tuning
+
+* **Mechanical tuning** changes the width of the cavity, i.e. its effective capacitance, and hence the resonant frequency. The output power stays essentially the same.
+* **Electronic tuning** changes the repeller voltage, which changes the output frequency — but the output power also changes. It is quantified by the **electronic tuning sensitivity (ETS)**, obtained as the slope of the frequency characteristic of the mode.
 
 ---
 
 ## Procedure
 
-1. Set up the components and equipment as shown in the figure above.
-2. Initially set the variable attenuator for maximum attenuation.
-3. Keep the control knobs of the Gunn power supply as follows:
+1. Connect the components and equipment as shown in Fig. (A).
+2. Keep the control knobs of the klystron power supply as follows:
 
    | Control | Setting |
    |---|---|
-   | Meter switch | OFF |
-   | Gunn bias knob | Fully anti-clockwise |
-   | PIN bias knob / Mod amplifier | Mid position |
-   | PIN mod frequency | Mid position |
+   | Mode switch | AM |
+   | Beam voltage knob | Fully anti-clockwise |
+   | Repeller voltage knob | Fully clockwise |
+   | Meter switch | Beam current |
 
-4. Keep the control knobs of the VSWR meter as follows:
-
-   | Control | Setting |
-   |---|---|
-   | Meter switch | Normal |
-   | Input switch | Crystal low impedance / 200 K |
-   | Range dB switch | 50 dB |
-   | Gain control knob | Fully clockwise |
-
-5. Set the micrometer of the Gunn oscillator between 5–7 mm for the required frequency of operation.
-6. Switch ON the Gunn power supply, the VSWR meter and the cooling fan.
-7. Keep the mode switch of the Gunn power supply at square wave / internal modulation.
-8. Turn the meter knob to the voltage position and note that as the Gunn bias voltage is varied the current starts decreasing — this indicates the negative resistance characteristic of the Gunn diode. Apply a voltage that puts the device in the middle of the negative resistance region.
-9. Connect the detector output to the SWR meter.
-10. Adjust the square-wave modulation frequency to approximately 1 kHz.
-11. Change the meter range if no deflection is observed.
-12. Keep the slotted-line probe at the position where maximum deflection is observed on the meter.
-13. Adjust the attenuator setting and the gain control knob of the VSWR meter and tune the detector plunger so the pointer indicates VSWR = 1.
-14. Move the detector probe along the slotted line and note the position where the pointer reaches the extreme left — the first minimum. To locate the minimum exactly, note the positions of equal-response points on either side; their midpoint gives the position of the minimum. Note the next minimum position the same way.
-15. Repeat the above procedure for different micrometer settings.
-
-### Depth of Modulation of the PIN Diode
-
-1. Apply the Gunn bias voltage slowly until the panel meter of the Gunn power supply reads 8 V.
-2. Tune the PIN modulator bias voltage and frequency knobs for maximum output on the oscilloscope.
-3. Align the bottom of the square wave on the oscilloscope with a reference level and note the micrometer reading of the variable attenuator.
-4. Now, using the variable attenuator, align the top of the square wave with the same reference level and note the micrometer reading.
-5. Connect the VSWR meter to the detector mount and note the dB reading for both micrometer settings of the variable attenuator.
-6. The difference between the two dB readings gives the modulation depth of the PIN modulator.
-
-> **Note:** After tuning the Gunn source, follow the same procedure for VSWR and impedance measurement as for the depth of modulation of the PIN modulator.
+3. Rotate the frequency meter to one side (**rotate the frequency meter very slowly**).
+4. Switch on the klystron power supply, the VSWR meter/CRO and the cooling fan for the klystron tube. Wait 1–2 minutes for the klystron to respond.
+5. With the cathode voltage knob at minimum the beam voltage is about 235–300 V. Observe the beam current by switching the meter to the beam-current position. **The beam current must not exceed 30 mA** — try to set it to about 20 mA by adjusting the beam voltage knob.
+6. Change the meter switch to the repeller/reflector voltage position.
+7. Decreasing the reflector/repeller voltage, record the output power and the frequency.
+8. To measure frequency, set the mode switch to AM and observe the output on the CRO. Use the AM amplitude and frequency controls and the oscilloscope front-panel controls to get a clear display. Rotate the frequency meter and watch for a dip in the output; note the corresponding frequency.
+9. Switch on the beam voltage and rotate the beam voltage knob clockwise slowly while watching the VSWR meter; set it for maximum deflection.
+10. Change the repeller voltage slowly and set it for maximum deflection on the VSWR meter.
+11. Rotate the frequency meter knob slowly and stop where the output on the VSWR meter is lowest.
+12. Read the frequency directly on the frequency meter, between the two horizontal fine marks.
+13. Change the repeller voltage and read the power and frequency for each repeller voltage.
 
 ## Observation
 
 *(Include your own table relevant to the experiment.)*
 
-## Calculation
+## Graph
 
-*(Include your own calculation relevant to the experiment.)*
+*(Include your own graph relevant to the experiment.)*
 
 ## Precautions
 
-* Check the connections before switching on the kit.
-* Make all connections properly.
-* Take the observations carefully.
+1. Check the connections before switching on the kit.
+2. Keep all knobs at their minimum positions before switching on the VSWR meter / klystron power supply.
+3. On the klystron power supply the **HT must be OFF** before switching on the mains supply.
+4. The beam knob must be fully anti-clockwise and the repeller voltage knob fully clockwise.
+5. Switch on the mains and allow some warm-up time for accurate readings.
+6. Make all connections properly.
+7. Do not look directly into the waveguide.
+8. After the experiment, switch off the mains and return all knobs to their minimum positions before leaving the bench.
+9. If the mains supply fails mid-experiment, return to the initial condition — all knobs at minimum — and switch off the main switches.
+10. Do not increase the repeller voltage beyond −70 V; it should stay between −70 V and 270 V.
 
 ## Conclusion
 
-*(Write your own.)*
+*Hence, performed the experiment successfully.*
